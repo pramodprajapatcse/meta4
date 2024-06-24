@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tax Calculator DApp</title>
+</head>
+<body>
+    <h1>Tax Calculator</h1>
+    <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <label for="taxRate">Tax Rate (%):</label>
+        <input type="number" id="taxRate">
+    </div>
+    <div>
+        <button onclick="calculateTax()">Calculate Tax</button>
+    </div>
+    <div>
+        <p>Tax Amount: <span id="taxAmount">Loading...</span></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
